@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Activity Checklist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Character Activity Checklist</h2>
+<table id="checklistTable">
+  <thead>
+    <tr>
+      <th>Character Name</th>
+      <th>Activity Check (✔️)</th>
+      <th>Activity Check Link</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" placeholder="Character Name"></td>
+      <td><input type="checkbox"></td>
+      <td><input type="text" placeholder="Link to Activity Check"></td>
+      <td><button onclick="removeRow(this)">Remove</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<button onclick="addRow()">Add New Character</button>
+<button onclick="clearCheckboxAndLinks()">Clear Checkboxes & Links</button>
+<button onclick="exportToTxt()">Export to TXT</button>
+
+<script src="script.js"></script>
+</body>
+</html>
